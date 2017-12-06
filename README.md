@@ -1,8 +1,9 @@
 # Core Java, 10th Edition 
-##Volume I - Fundamentals
-######by Cay S. Horstmann
+## Volume I - Fundamentals
+###### by Cay S. Horstmann
 
 **Description**
+
 Core Java® has long been recognized as the leading, no-nonsense tutorial and reference for experienced programmers who want to write robust Java code for real-world applications. Now, Core Java®, Volume I—Fundamentals, Tenth Edition, has been extensively updated to reflect the most eagerly awaited and innovative version of Java in years: Java SE 8. Rewritten and reorganized to illuminate new Java SE 8 features, idioms, and best practices, it contains hundreds of example programs—all carefully crafted for easy understanding and practical applicability.
 
 Writing for serious programmers solving real-world problems, Cay Horstmann helps you achieve a deep understanding of the Java language and library. In this first volume of the two-volume work, Horstmann focuses on fundamental language concepts and the foundations of modern user interface programming. You’ll find in-depth coverage of topics ranging from Java object-oriented programming to generics, collections, lambda expressions, Swing UI design, and the latest approaches to concurrency and functional programming. This guide will help you
