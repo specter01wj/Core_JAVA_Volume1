@@ -29,6 +29,5 @@ public class ch3_9_lotteryArray {
 	         System.out.println();
 	      }
 	   }
-	   
 	
 }
