@@ -20,6 +20,17 @@ public class ch4_3_staticTest {
 		int n = Employee.getNextId();
 		System.out.println("Next avail id = " + n);
 		
+		Employee a = new Employee("Alice", 25000);
+		Employee b = new Employee("Bob", 35000);
+		System.out.println("A = " + a.getName() + ", B = " + b.getName());
+		swap(a,b);
+		System.out.println("A = " + a.getName() + ", B = " + b.getName());
+	}
+	
+	public static void swap(Employee x, Employee y) {
+		Employee temp = x;
+		x = y;
+		y = temp;
 	}
 	
 }
