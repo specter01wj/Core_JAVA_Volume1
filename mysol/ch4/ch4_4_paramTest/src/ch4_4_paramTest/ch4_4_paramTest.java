@@ -11,25 +11,28 @@ public class ch4_4_paramTest {
 		tripleValue(percent);
 		System.out.println("After: percent= " + percent);
 		
-//		for(Employee e : staff) {
-//			e.setId();
-//			System.out.println("name = " + e.getName() + ", id = " + e.getId() 
-//				+ ", salary = " + e.getSalary());
-//		}
-//		
-//		int n = Employee.getNextId();
-//		System.out.println("Next avail id = " + n);
-//		
-//		Employee a = new Employee("Alice", 25000);
-//		Employee b = new Employee("Bob", 35000);
-//		System.out.println("A = " + a.getName() + ", B = " + b.getName());
-//		swap(a,b);
-//		System.out.println("A = " + a.getName() + ", B = " + b.getName());
+		System.out.println("Test tripleSalary");
+		Employee harry = new Employee("Harry", 85000);
+		System.out.println("Before: salary= " + harry.getSalary());
+		tripleSalary(harry);
+		System.out.println("After: salary= " + harry.getSalary());
+	
+		System.out.println("Test swap");
+		Employee a = new Employee("Alice", 25000);
+		Employee b = new Employee("Bob", 35000);
+		System.out.println("A = " + a.getName() + ", B = " + b.getName());
+		swap(a,b);
+		System.out.println("A = " + a.getName() + ", B = " + b.getName());
 	}
 	
 	public static void tripleValue(double x) {
 		x = 3 * x;
 		System.out.println("tripleValue end: x = " + x);
+	}
+	
+	public static void tripleSalary(Employee x) {
+		x.raiseSalary(200);
+		System.out.println("tripleSalary end: x = " + x.getSalary());
 	}
 	
 	public static void swap(Employee x, Employee y) {
