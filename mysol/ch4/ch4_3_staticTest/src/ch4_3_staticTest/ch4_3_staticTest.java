@@ -28,9 +28,11 @@ public class ch4_3_staticTest {
 	}
 	
 	public static void swap(Employee x, Employee y) {
+		System.out.println("Before: x = " + x.getName() + ", y = " + y.getName());
 		Employee temp = x;
 		x = y;
 		y = temp;
+		System.out.println("After: x = " + x.getName() + ", y = " + y.getName());
 	}
 	
 }
