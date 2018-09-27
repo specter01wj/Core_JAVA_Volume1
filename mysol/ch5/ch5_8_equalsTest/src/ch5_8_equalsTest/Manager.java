@@ -24,7 +24,7 @@ public class Manager extends Employee {
 		
 		Manager other = (Manager) otherObject;
 		
-		return bonus = other.bonus;
+		return bonus == other.bonus;
 			
 	}
 	
