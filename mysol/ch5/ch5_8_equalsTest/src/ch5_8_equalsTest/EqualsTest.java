@@ -15,6 +15,16 @@ public class EqualsTest {
 		System.out.println("alice1.equals(bob): " + alice1.equals(bob));
 		System.out.println("bob.toString(): " + bob);
 		
+		Manager carl = new Manager("Carl Cracker", 95000, 1981, 2, 21);
+		Manager boss = new Manager("Carl Cracker", 95000, 1981, 2, 21);
+		boss.setBonus(5000);
+		System.out.println("boss.toString(): " + boss);
+		System.out.println("carl.equals(boss): " + carl.equals(boss));
+		System.out.println("alice1.hashCode(): " + alice1.hashCode());
+		System.out.println("alice3.hashCode(): " + alice3.hashCode());
+		System.out.println("bob.hashCode(): " + bob.hashCode());
+		System.out.println("carl.hashCode(): " + carl.hashCode());
+		
 	}
 	
 }
