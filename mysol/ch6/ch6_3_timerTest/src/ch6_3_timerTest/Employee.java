@@ -44,5 +44,4 @@ public class Employee {
 		salary += raise;
 	}
 	
-	
 }
