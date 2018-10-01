@@ -3,7 +3,7 @@ package ch6_4_cloneTest;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Employee {
+public class Employee implements Cloneable {
 
 	private String name;
 	private double salary;
