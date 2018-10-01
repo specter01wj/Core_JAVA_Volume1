@@ -3,16 +3,23 @@ package ch6_3_timerTest;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Employee {
+public class Employee implements Cloneable {
 
 	private String name;
 	private double salary;
-	private LocalDate hireDay;
+	private Date hireDay;
 	
-	public Employee(String n, double s, int year, int month, int day) {
+	public Employee(String n, double s) {
 		this.name = n;
 		this.salary = s;
-		this.hireDay = LocalDate.of(year,  month,  day);
+		this.hireDay = new Date();
+	}
+	
+	public Employee clone() throws CloneNotSupportedException {
+		Employee cloned = (Employee) super.clone();
+		cloned.hireDay = (Date) hireDay.clone();
+		
+		return cloned;
 	}
 	
 	public String getName() {
@@ -27,12 +34,13 @@ public class Employee {
 		this.salary = salary;
 	}
 
-	public LocalDate getHireDay() {
+	public Date getHireDay() {
 		return this.hireDay;
 	}
 
-	public void setHireDay(LocalDate hireDay) {
-		this.hireDay = hireDay;
+	public void setHireDay(int year, int month, int day) {
+		Date newHireDay = new GregorianCalendar(year, month = 1, day).getTime();
+		this.hireDay.setTime(newHireDay.getTime());;
 	}
 
 	public void setName(String name) {
@@ -42,6 +50,10 @@ public class Employee {
 	public void raiseSalary(double byPercent) {
 		double raise = salary * byPercent / 100;
 		salary += raise;
+	}
+	
+	public String toString() {
+		return "Employee[name = " + name + ", salary = " + salary +  ", hireDay = " + hireDay + "]";
 	}
 	
 }
