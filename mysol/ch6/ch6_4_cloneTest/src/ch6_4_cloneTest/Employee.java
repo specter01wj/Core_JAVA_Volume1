@@ -1,9 +1,9 @@
-package ch6_3_timerTest;
+package ch6_4_cloneTest;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Employee implements Cloneable {
+public class Employee {
 
 	private String name;
 	private double salary;
